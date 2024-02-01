@@ -1,0 +1,6 @@
+/mnt/c/Users/jjlee/repo/build/CMakeFiles/OLAS.dir
+/mnt/c/Users/jjlee/repo/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jjlee/repo/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jjlee/repo/build/core/CMakeFiles/hello.dir
+/mnt/c/Users/jjlee/repo/build/core/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jjlee/repo/build/core/CMakeFiles/rebuild_cache.dir
