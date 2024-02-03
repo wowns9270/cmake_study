@@ -1,4 +1,4 @@
-#include "./lib/include/Worker.hpp"
+#include "include/Worker.hpp"
 
 int main()
 {

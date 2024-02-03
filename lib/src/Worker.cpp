@@ -1,7 +1,7 @@
 
 
-#include "./../include/Worker.hpp"
-#include "./../include/Timer.hpp"
+#include "include/Worker.hpp"
+#include "include/Timer.hpp"
 
 void Worker::doSomething()
 {
