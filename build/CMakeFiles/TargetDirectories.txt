@@ -1,3 +1,6 @@
 /mnt/c/Users/jjlee/repo/build/CMakeFiles/CMAKE_EXAM.dir
 /mnt/c/Users/jjlee/repo/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/jjlee/repo/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jjlee/repo/build/lib/CMakeFiles/Timer.dir
+/mnt/c/Users/jjlee/repo/build/lib/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jjlee/repo/build/lib/CMakeFiles/rebuild_cache.dir

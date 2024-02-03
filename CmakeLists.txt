@@ -15,9 +15,14 @@ set (SOURCE_FILE
     #${CMAKE_CURRENT_SOURCE_DIR}/lib/include/Timer.hpp
     #${CMAKE_CURRENT_SOURCE_DIR}/lib/include/Worker.hpp
 
-    ${CMAKE_CURRENT_SOURCE_DIR}/lib/src/Worker.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/lib/src/Timer.cpp
+    #${CMAKE_CURRENT_SOURCE_DIR}/lib/src/Worker.cpp
+    #${CMAKE_CURRENT_SOURCE_DIR}/lib/src/Timer.cpp
 )
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILE})
 
+target_link_libraries(${PROJECT_NAME} PUBLIC Timer)
+
+target_link_directories( ${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/lib/include)

@@ -64,29 +64,46 @@ CMAKE_BINARY_DIR = /mnt/c/Users/jjlee/repo/build
 
 # The main recursive "all" target.
 all: CMakeFiles/CMAKE_EXAM.dir/all
+all: lib/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: lib/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/CMAKE_EXAM.dir/clean
+clean: lib/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib
+
+# Recursive "all" directory target.
+lib/all: lib/CMakeFiles/Timer.dir/all
+.PHONY : lib/all
+
+# Recursive "preinstall" directory target.
+lib/preinstall:
+.PHONY : lib/preinstall
+
+# Recursive "clean" directory target.
+lib/clean: lib/CMakeFiles/Timer.dir/clean
+.PHONY : lib/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/CMAKE_EXAM.dir
 
 # All Build rule for target.
-CMakeFiles/CMAKE_EXAM.dir/all:
+CMakeFiles/CMAKE_EXAM.dir/all: lib/CMakeFiles/Timer.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jjlee/repo/build/CMakeFiles --progress-num=1,2,3,4 "Built target CMAKE_EXAM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jjlee/repo/build/CMakeFiles --progress-num=1,2 "Built target CMAKE_EXAM"
 .PHONY : CMakeFiles/CMAKE_EXAM.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CMAKE_EXAM.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CMAKE_EXAM.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 0
 .PHONY : CMakeFiles/CMAKE_EXAM.dir/rule
@@ -99,6 +116,32 @@ CMAKE_EXAM: CMakeFiles/CMAKE_EXAM.dir/rule
 CMakeFiles/CMAKE_EXAM.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/clean
 .PHONY : CMakeFiles/CMAKE_EXAM.dir/clean
+
+#=============================================================================
+# Target rules for target lib/CMakeFiles/Timer.dir
+
+# All Build rule for target.
+lib/CMakeFiles/Timer.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Timer.dir/build.make lib/CMakeFiles/Timer.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Timer.dir/build.make lib/CMakeFiles/Timer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jjlee/repo/build/CMakeFiles --progress-num=3,4,5 "Built target Timer"
+.PHONY : lib/CMakeFiles/Timer.dir/all
+
+# Build rule for subdir invocation for target.
+lib/CMakeFiles/Timer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/Timer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 0
+.PHONY : lib/CMakeFiles/Timer.dir/rule
+
+# Convenience name for target.
+Timer: lib/CMakeFiles/Timer.dir/rule
+.PHONY : Timer
+
+# clean rule for target.
+lib/CMakeFiles/Timer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Timer.dir/build.make lib/CMakeFiles/Timer.dir/clean
+.PHONY : lib/CMakeFiles/Timer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

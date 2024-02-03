@@ -1,4 +1,12 @@
 
 
+project(Timer)
 
-add_library(hello STATIC hello.cpp)
+set (SOURCE_FILE  
+
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Worker.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Timer.cpp
+)
+
+
+add_library(${PROJECT_NAME} ${SOURCE_FILE} )
