@@ -63,85 +63,42 @@ CMAKE_BINARY_DIR = /mnt/c/Users/jjlee/repo/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/OLAS.dir/all
-all: core/all
+all: CMakeFiles/CMAKE_EXAM.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: core/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/OLAS.dir/clean
-clean: core/clean
+clean: CMakeFiles/CMAKE_EXAM.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory core
-
-# Recursive "all" directory target.
-core/all: core/CMakeFiles/hello.dir/all
-.PHONY : core/all
-
-# Recursive "preinstall" directory target.
-core/preinstall:
-.PHONY : core/preinstall
-
-# Recursive "clean" directory target.
-core/clean: core/CMakeFiles/hello.dir/clean
-.PHONY : core/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OLAS.dir
+# Target rules for target CMakeFiles/CMAKE_EXAM.dir
 
 # All Build rule for target.
-CMakeFiles/OLAS.dir/all: core/CMakeFiles/hello.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OLAS.dir/build.make CMakeFiles/OLAS.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OLAS.dir/build.make CMakeFiles/OLAS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jjlee/repo/build/CMakeFiles --progress-num=1,2 "Built target OLAS"
-.PHONY : CMakeFiles/OLAS.dir/all
+CMakeFiles/CMAKE_EXAM.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jjlee/repo/build/CMakeFiles --progress-num=1,2,3,4 "Built target CMAKE_EXAM"
+.PHONY : CMakeFiles/CMAKE_EXAM.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/OLAS.dir/rule: cmake_check_build_system
+CMakeFiles/CMAKE_EXAM.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OLAS.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CMAKE_EXAM.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 0
-.PHONY : CMakeFiles/OLAS.dir/rule
+.PHONY : CMakeFiles/CMAKE_EXAM.dir/rule
 
 # Convenience name for target.
-OLAS: CMakeFiles/OLAS.dir/rule
-.PHONY : OLAS
+CMAKE_EXAM: CMakeFiles/CMAKE_EXAM.dir/rule
+.PHONY : CMAKE_EXAM
 
 # clean rule for target.
-CMakeFiles/OLAS.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OLAS.dir/build.make CMakeFiles/OLAS.dir/clean
-.PHONY : CMakeFiles/OLAS.dir/clean
-
-#=============================================================================
-# Target rules for target core/CMakeFiles/hello.dir
-
-# All Build rule for target.
-core/CMakeFiles/hello.dir/all:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/hello.dir/build.make core/CMakeFiles/hello.dir/depend
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/hello.dir/build.make core/CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jjlee/repo/build/CMakeFiles --progress-num=3,4 "Built target hello"
-.PHONY : core/CMakeFiles/hello.dir/all
-
-# Build rule for subdir invocation for target.
-core/CMakeFiles/hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/hello.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jjlee/repo/build/CMakeFiles 0
-.PHONY : core/CMakeFiles/hello.dir/rule
-
-# Convenience name for target.
-hello: core/CMakeFiles/hello.dir/rule
-.PHONY : hello
-
-# clean rule for target.
-core/CMakeFiles/hello.dir/clean:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/hello.dir/build.make core/CMakeFiles/hello.dir/clean
-.PHONY : core/CMakeFiles/hello.dir/clean
+CMakeFiles/CMAKE_EXAM.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/clean
+.PHONY : CMakeFiles/CMAKE_EXAM.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

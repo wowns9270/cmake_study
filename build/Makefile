@@ -117,37 +117,72 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named OLAS
+# Target rules for targets named CMAKE_EXAM
 
 # Build rule for target.
-OLAS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OLAS
-.PHONY : OLAS
+CMAKE_EXAM: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMAKE_EXAM
+.PHONY : CMAKE_EXAM
 
 # fast build rule for target.
-OLAS/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OLAS.dir/build.make CMakeFiles/OLAS.dir/build
-.PHONY : OLAS/fast
+CMAKE_EXAM/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/build
+.PHONY : CMAKE_EXAM/fast
 
-#=============================================================================
-# Target rules for targets named hello
+lib/src/Timer.o: lib/src/Timer.cpp.o
+.PHONY : lib/src/Timer.o
 
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+# target to build an object file
+lib/src/Timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/lib/src/Timer.cpp.o
+.PHONY : lib/src/Timer.cpp.o
 
-# fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/hello.dir/build.make core/CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+lib/src/Timer.i: lib/src/Timer.cpp.i
+.PHONY : lib/src/Timer.i
+
+# target to preprocess a source file
+lib/src/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/lib/src/Timer.cpp.i
+.PHONY : lib/src/Timer.cpp.i
+
+lib/src/Timer.s: lib/src/Timer.cpp.s
+.PHONY : lib/src/Timer.s
+
+# target to generate assembly for a file
+lib/src/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/lib/src/Timer.cpp.s
+.PHONY : lib/src/Timer.cpp.s
+
+lib/src/Worker.o: lib/src/Worker.cpp.o
+.PHONY : lib/src/Worker.o
+
+# target to build an object file
+lib/src/Worker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/lib/src/Worker.cpp.o
+.PHONY : lib/src/Worker.cpp.o
+
+lib/src/Worker.i: lib/src/Worker.cpp.i
+.PHONY : lib/src/Worker.i
+
+# target to preprocess a source file
+lib/src/Worker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/lib/src/Worker.cpp.i
+.PHONY : lib/src/Worker.cpp.i
+
+lib/src/Worker.s: lib/src/Worker.cpp.s
+.PHONY : lib/src/Worker.s
+
+# target to generate assembly for a file
+lib/src/Worker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/lib/src/Worker.cpp.s
+.PHONY : lib/src/Worker.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OLAS.dir/build.make CMakeFiles/OLAS.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -155,7 +190,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OLAS.dir/build.make CMakeFiles/OLAS.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -163,7 +198,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OLAS.dir/build.make CMakeFiles/OLAS.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKE_EXAM.dir/build.make CMakeFiles/CMAKE_EXAM.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -174,8 +209,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... OLAS"
-	@echo "... hello"
+	@echo "... CMAKE_EXAM"
+	@echo "... lib/src/Timer.o"
+	@echo "... lib/src/Timer.i"
+	@echo "... lib/src/Timer.s"
+	@echo "... lib/src/Worker.o"
+	@echo "... lib/src/Worker.i"
+	@echo "... lib/src/Worker.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

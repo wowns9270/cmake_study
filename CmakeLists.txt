@@ -1,12 +1,18 @@
 cmake_minimum_required(VERSION 3.10.2) 
 
-project(OLAS)
+project(CMAKE_EXAM)
 
 #add_compile_options(-pedantic -Wall -Wconversion -Wextra -Wcast-align -Warith-conversion -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations 
 #-Wmissing-include-dirs -Wnoexcept -Wold-style-cast -Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=5 -Wswitch-default -Wundef -Wno-unused )
 
-add_executable(${PROJECT_NAME} main.cpp)
+set (SOURCE_FILE  
+    main.cpp
+    #${CMAKE_CURRENT_SOURCE_DIR}/lib/include/Timer.hpp
+    #${CMAKE_CURRENT_SOURCE_DIR}/lib/include/Worker.hpp
 
-add_subdirectory(core)
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/src/Worker.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/src/Timer.cpp
+)
 
-target_link_libraries(${PROJECT_NAME} hello)
+add_executable(${PROJECT_NAME} ${SOURCE_FILE})
+
