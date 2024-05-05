@@ -3,10 +3,11 @@ add_definitions
 --- 
 
 - 매크로 변수를 정의하기 위한 cmake 명령어 
-- g++ -D 옵션과 동일 
+- g++ -D 옵션과 동일 (-> g++ -D TEST_DEFINE)
 - 유효범위 : 현재 target과 이후 추가된 하위 target에 유효함. 
 ---
 G++ man 
+
 ![alt text](image.png)
 
 ---
