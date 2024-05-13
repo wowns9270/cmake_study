@@ -1,0 +1,2 @@
+/mnt/c/Users/jjlee/cmake_study/cmake_study/variables/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jjlee/cmake_study/cmake_study/variables/build/CMakeFiles/rebuild_cache.dir
